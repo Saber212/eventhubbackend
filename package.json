@@ -3,12 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/functions/*.js",
+  "files" : [
+    "src/",
+    "models/"
+  ],
   "scripts": {
     "start": "func start",
     "test": "echo \"No tests yet...\""
   },
   "dependencies": {
-    "@azure/functions": "^4.0.0"
+    "@azure/functions": "^4.0.0",
+    "bcrypt": "^5.1.1",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2",
+    "tedious": "^18.6.1"
   },
   "devDependencies": {
     "azure-functions-core-tools": "^4.x",
