@@ -6,7 +6,6 @@ app.http('getUser', {
     authLevel: 'anonymous',
     handler: async (request, context) => {
         try {
-            // Ensure no attempt is made to parse the body
             const users = await User.findAll();
             const plainusers = users.map(user => user.toJSON());
             return {
