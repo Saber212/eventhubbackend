@@ -40,6 +40,5 @@ Object.keys(db).forEach(modelName => {
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
-
 const User = require('./user')(sequelize, DataTypes);
 module.exports = { db, User };

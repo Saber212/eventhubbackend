@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-    const User = sequelize.define("User", {
+    const User = sequelize.define("Users", {
         id: {
             type: DataTypes.INTEGER,
             primaryKey: true,
@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
             unique: true
         },
-        password_hash: {
+        passwordHash: {
             type: DataTypes.STRING,
             allowNull: false
         }
